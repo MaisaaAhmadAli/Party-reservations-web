@@ -14,24 +14,24 @@ $pdf->SetFont('Arial','B',14);
 
 //Cell(width , height , text , border , end line , [align] )
 
-$pdf->Cell(130	,5,'GEMUL APPLIANCES.CO',0,0);
+$pdf->Cell(130	,5,'MA.CO',0,0);
 $pdf->Cell(59	,5,'INVOICE',0,1);//end of line
 
 //set font to arial, regular, 12pt
 $pdf->SetFont('Arial','',12);
 
-$pdf->Cell(130	,5,'[Street Address]',0,0);
+$pdf->Cell(130	,5,'Prince Turky Street',0,0);
 $pdf->Cell(59	,5,'',0,1);//end of line
 
-$pdf->Cell(130	,5,'[City, Country, ZIP]',0,0);
+$pdf->Cell(130	,5,'Alkobar, SA',0,0);
 $pdf->Cell(25	,5,'Date',0,0);
-$pdf->Cell(34	,5,'[dd/mm/yyyy]',0,1);//end of line
+$pdf->Cell(34	,5,date("Y/m/d"),0,1);//end of line
 
-$pdf->Cell(130	,5,'Phone [+12345678]',0,0);
+$pdf->Cell(130	,5,'',0,0);
 $pdf->Cell(25	,5,'Invoice #',0,0);
 $pdf->Cell(34	,5,'[1234567]',0,1);//end of line
 
-$pdf->Cell(130	,5,'Fax [+12345678]',0,0);
+$pdf->Cell(130	,5,'',0,0);
 $pdf->Cell(25	,5,'Customer ID',0,0);
 $pdf->Cell(34	,5,'[1234567]',0,1);//end of line
 
@@ -46,13 +46,13 @@ $pdf->Cell(10	,5,'',0,0);
 $pdf->Cell(90	,5,'[Name]',0,1);
 
 $pdf->Cell(10	,5,'',0,0);
-$pdf->Cell(90	,5,'[Company Name]',0,1);
+$pdf->Cell(90	,5,'Last Name',0,1);
 
 $pdf->Cell(10	,5,'',0,0);
-$pdf->Cell(90	,5,'[Address]',0,1);
+$pdf->Cell(90	,5,'',0,1);
 
 $pdf->Cell(10	,5,'',0,0);
-$pdf->Cell(90	,5,'[Phone]',0,1);
+$pdf->Cell(90	,5,'',0,1);
 
 //make a dummy empty cell as a vertical spacer
 $pdf->Cell(189	,10,'',0,1);//end of line
