@@ -389,9 +389,14 @@ question {
  
     </style>
 <title> </title>
-  
+    <?php require_once("Dolf_task1_header.php") ?> 
   <script>
-
+//  function myFunction() 
+//  {
+//  var x = document.getElementById("FirstVideo");
+  
+//      x.style.display = "block";
+// }
 function changecolor()
 {
     document.getElementById("welIcon").style.color="#50a33c";
@@ -400,8 +405,11 @@ function changecolor()
 
 </script>
     </head>
-<body >
-<a href="index.php"> click me</a>
+<body onload="changecolor()">
+
+<iframe   id = "FirstVideo" class ="vido body" display="block"    height="600"  src="https://www.youtube.com/embed/t7w3PHgvKJE"></iframe> 
+<button class="continueButton" onclick="window.location.href='secondVideo.php'" >continue</button>
+
 </body>
 
 </html>
